@@ -1,0 +1,71 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.register-form {
+    padding: 20px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    background-color: #222;
+    width: 100%;
+    max-width: 400px;
+}
+
+.register-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.register-form .form-label {
+    color: gold;
+}
+
+.register-form .form-control {
+    background-color: #333;
+    border: 1px solid gold;
+    color: white;
+}
+
+.register-form .form-control:focus {
+    background-color: #444;
+    border-color: white;
+    color: gold;
+}
+
+.register-form .btn-primary {
+    background-color: gold;
+    border-color: gold;
+    color: black;
+}
+
+.register-form .btn-primary:hover {
+    background-color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+.register-form .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(218, 165, 32, 0.5);
+}
+
+.register-link {
+    color: gold;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .register-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .register-form {
+        width: 90%;
+    }
+}

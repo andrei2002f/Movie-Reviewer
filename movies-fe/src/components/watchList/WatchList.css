@@ -1,0 +1,101 @@
+.watchlist-container {
+  color: white;
+  background-color: black;
+  padding: 15px; /* Adjust padding for overall container */
+}
+
+.watchlist-content {
+  margin: 0 auto;
+  width: 80%; /* Adjust width for content */
+  max-width: 650px; /* Increase max-width for a bit larger layout */
+}
+
+.watchlist-title {
+  color: gold;
+  font-size: 30px; /* Adjust font size as needed */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Adjust bottom margin for spacing */
+  border-bottom: 2px solid gold; /* Add a bottom border */
+  padding-bottom: 10px; /* Padding below the title for space above the border */
+  display: inline-block; /* Change display to manage border width */
+  width: auto; /* Let the width be content-based */
+}
+
+.watchlist-movies {
+  list-style: none;
+  padding: 0;
+}
+
+.watchlist-movie {
+  border: 1px solid gold;
+  border-radius: 5px; /* Adjust border-radius */
+  margin-bottom: 10px; /* Adjust margin between items */
+  padding: 10px; /* Adjust padding inside each item */
+  background-color: #222;
+  display: flex; /* Use flex display for horizontal layout */
+  align-items: center; /* Align items vertically */
+}
+
+.watchlist-movie img {
+  width: 100px; /* Increase width of movie posters */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: add border-radius to images */
+}
+
+/* Adjustments for title and button placement */
+.watchlist-movie-details {
+  display: flex; /* Ensure title and button are next to each other */
+  align-items: center; /* Align items vertically */
+  flex-grow: 1; /* Allow this container to take up available space */
+  margin-left: 15px; /* Space between poster and details */
+}
+
+.watchlist-movie-title {
+  color: gold;
+  font-size: 20px; /* Adjust font size as needed */
+  text-align: center; /* Center the title */
+  padding-bottom: 10px; /* Padding below the title for space above the border */
+  display: inline-block; /* Change display to manage border width */
+  width: auto; /* Let the width be content-based */
+}
+
+.remove-watchlist-btn {
+  padding: 6px 12px; /* Adjust padding for button */
+  font-size: 14px; /* Adjust font size for button */
+  background-color: gold;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Adjust border-radius for button */
+  margin-left: auto; /* Push button to the right */
+}
+
+.remove-watchlist-btn:hover {
+  background-color: darkgoldenrod;
+}
+
+.watchlist-message {
+  text-align: center;
+  margin-top: 25px; /* Adjust top margin for message */
+}
+
+.login-link {
+  color: gold;
+  font-size: 14px; /* Adjust font size for login link */
+}
+
+.login-link:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .watchlist-content, .watchlist-movie-details {
+    width: 95%; /* Adjust width for smaller screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .remove-watchlist-btn {
+    margin-top: 10px; /* Add some space above the button on smaller screens */
+    margin-left: 0; /* Align button with content above on smaller screens */
+  }
+}

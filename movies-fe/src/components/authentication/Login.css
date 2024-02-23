@@ -1,0 +1,62 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.login-form {
+    padding: 20px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    background-color: #222;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.login-form .form-label {
+    color: gold;
+}
+
+.login-form .form-control {
+    background-color: #333;
+    border: 1px solid gold;
+    color: white;
+}
+
+.login-form .form-control:focus {
+    background-color: #444;
+    border-color: white;
+    color: gold;
+}
+
+.login-form .btn-primary {
+    background-color: gold;
+    border-color: gold;
+    color: black;
+}
+
+.login-form .btn-primary:hover {
+    background-color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+.login-form .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(218, 165, 32, 0.5);
+}
+
+@media only screen and (max-width: 800px) {
+    .login-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .login-form {
+        width: 90%;
+    }
+}
